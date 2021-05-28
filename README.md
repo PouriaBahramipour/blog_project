@@ -1,4 +1,4 @@
-# blog_project
+# blogproject
 
 ## Project setup
 ```

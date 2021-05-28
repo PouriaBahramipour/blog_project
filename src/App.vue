@@ -1,32 +1,47 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+<div id="app">
+
+    <div id="bg">
+        <the-header></the-header>
     </div>
-    <router-view/>
-  </div>
+
+    <the-banner></the-banner>
+
+    <main-section></main-section>
+
+    <the-comments></the-comments>
+
+    <!-- <selected-content></selected-content> -->
+
+    <!-- <survey></survey> -->
+
+    <the-footer></the-footer>
+
+</div>
 </template>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+<script>
+import TheHeader from './components/nav/TheHeader.vue';
+import TheBanner from './components/Banner/TheBanner.vue';
+// import SelectedContent from './components/content/SelectedContent.vue';
+import MainSection from './components/main/Mainsection.vue';
+import TheComments from './components/comments/TheComments.vue';
+import TheFooter from './components/footer/TheFooter.vue';
+// import Survey from './components/survey/Survey.vue';
 
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
+export default {
+    name: 'App',
+    components: {
+        TheHeader,
+        TheBanner,
+        MainSection,
+        TheComments,
+        TheFooter,
+        
     }
-  }
 }
+</script>
+
+<style lang="scss">
+
 </style>

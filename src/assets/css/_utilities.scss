@@ -1,0 +1,56 @@
+@import 'variables';
+
+@function color($color-name) {
+    @return map-get($colors, $color-name)
+}
+
+
+// Text Styles
+.x-large {
+    font-size: 2rem !important;
+    line-height: 1.2 !important;
+    margin-bottom: 1rem !important;
+}
+.large{
+    font-size: 1.5rem !important;
+    line-height: 1.2 !important;
+    margin-bottom: 1rem !important;
+}
+.lead{
+    font-size: 0.9rem !important;
+    margin-bottom: 1rem !important;
+}
+
+
+// Buttons
+.btn{
+    display: inline-block;
+    font-size: 0.9rem !important;
+    color: #333;
+    border: none;
+    margin-right: 0.5rem !important;
+    padding: 0.4rem 1.3rem !important;
+    background: color(accent);
+}
+
+
+// Section
+.section{
+    margin-top: 80px !important;
+    text-align: center;
+  }
+  .section-a{
+    margin-top: 200px !important;
+  }
+
+
+  .my-box{
+    padding: 26px 31px 0 !important;
+    border-radius: 35px !important;
+    background: #fff !important;
+    margin: 104px auto 0 !important;
+    box-shadow: 0 1px 5px 0 rgb(0 0 0 / 20%), 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 12%) !important;
+    border: 2px solid transparent !important;
+  }
+  
+  
